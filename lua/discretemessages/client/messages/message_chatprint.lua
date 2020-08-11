@@ -11,7 +11,7 @@ DiscreteUI:CreateFont("Discrete.Message.WelcomeText", 200)
 //Should be the fist function called for a new panel.
 
 function MESSAGE:PostInitialize()
-    chat.AddText( self:GetText() )
+    chat.AddText( self:GetPrimaryColor(), self:GetText() )
 end
 
 
